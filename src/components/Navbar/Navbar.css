@@ -1,0 +1,150 @@
+header {
+    padding: 0.1rem;
+    background-color: #221F1F;
+    color: #221F1F;
+}
+
+.navbar {
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 5px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #E50914;
+    text-decoration: none;
+    float: right;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+.nav-link:hover {
+    transform: scale(1);
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    right: 0;
+    background: #E50914;
+    transition: width .2s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+    background: #E50914;
+}
+
+.title {
+    font-size: 2.1rem;
+    float: left;
+    color: #E50914;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    transition-duration: 0.4s;
+}
+
+.title:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 320px) {
+    .navbar {
+        text-align: left;
+    }
+
+    .nav-menu {
+        display: inline-block;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 1rem;
+        margin-bottom: -15px;
+    }
+}
+
+@media (min-width: 500px) {
+    .header {
+        height: 70px;
+    }
+
+    .navbar {
+        float: left;
+    }
+
+    .nav-menu {
+        padding-top: 1.7rem;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin-top: -45px;
+    }
+
+    .title {
+        font-size: 1.7rem;
+        text-align: left;
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 675px) {
+    .header {
+        height: 70px;
+    }
+
+    .navbar {
+        float: right;
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-menu{
+        padding-top: 1.2rem;
+    }
+
+    .nav-link {
+        margin-top: -45px;
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        float: left;
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media (min-width: 968px) {
+
+    .nav-link {
+    margin-top: -10px;
+        font-size: 22px;
+    }
+
+    .nav-menu{
+        margin: -1px 0;
+    }
+
+
+    .title {
+        font-size: 2rem;
+        float: left;
+        padding: 0.8rem 0;
+        padding-left: 2rem;
+    }
+}

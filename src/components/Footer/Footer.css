@@ -1,0 +1,104 @@
+#buttons{
+    padding: 20px
+}
+
+#buttons a{
+    padding-left: 45px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-instagram {
+    background: #da693d;
+}
+
+.fa-youtube {
+    background: #ce3030;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #E50914;
+    padding-left: 5px;
+}
+
+.site-footer {
+    background-color: #221F1F;
+    height: 150px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.social-media {
+    padding-top: 20px;
+}
+
+@media (min-width: 320px) {
+    .fa {
+        padding: 15px;
+        font-size: 15px;
+        width: 15px;
+    }
+
+    .copy {
+        padding: 0 10px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .site-footer {
+        height: 140px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (min-width: 480px) {
+    .fa {
+        font-size: 18px;
+        width: 18px;
+    }
+
+    .copy {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 760px) {
+    .fa {
+        font-size: 21px;
+        width: 21px;
+    }
+
+    .copy {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 980px) {
+    .fa {
+        font-size: 24px;
+        width: 24px;
+    }
+
+    .copy {
+        font-size: 24px;
+    }
+}
