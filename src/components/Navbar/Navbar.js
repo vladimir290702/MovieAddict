@@ -1,8 +1,11 @@
 import './Navbar.css';
-import { Link, useNavigate } from 'react-router-dom';;
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../contexts/authContext';
 
 export default function Navbar() {
     const navigate = useNavigate();
+    const { currentUser, logout } = useAuth();
+
 
     const guestNavigation = (
         <ul className="nav-menu">
@@ -18,12 +21,13 @@ export default function Navbar() {
     const userNavigation = (
         <ul className="nav-menu">
             <li className="nav-item">
-                <Link className="nav-link" to="/profile">Welcome, Vlad</Link>
+                <Link className="nav-link" to="/profile">Welcome, {currentUser}</Link>
             </li>
             <li className="nav-item">
                 <Link className="nav-link" to="/logout" onClick={async e => {
                     e.preventDefault();
-                    navigate('/')
+                    navigate('/');
+                    logout();
                 }}>Logout</Link>
             </li>
         </ul>
@@ -35,6 +39,7 @@ export default function Navbar() {
                 <Link className="title" to="/">MOVIE ADDICT</Link>
 
                 <nav className="navbar">
+                {currentUser ? userNavigation : guestNavigation}
                 </nav>
             </header>
         </div>
