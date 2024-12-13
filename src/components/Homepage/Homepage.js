@@ -17,6 +17,8 @@ export default function Homepage() {
             const request = await fetch(requests.fetchPopular);
             const data = await request.json();
 
+            
+
             let randomMovie = Math.floor(Math.random() * data.results.length);
             setMovie(data.results[randomMovie]);
 
@@ -24,6 +26,9 @@ export default function Homepage() {
         }
         fetchData();
     }, [])
+
+    console.log(movie);
+    
 
     return (
         <>

@@ -9,6 +9,8 @@ import Login from "./components/Login/Login";
 import AddMovie from "./components/AddMovie/AddMovie";
 import MovieDetails from "./components/MovieDetails/MovieDetails";
 import Profile from "./components/Profile/Profile";
+import AllMovie from './components/AllNetflixMovie/AllMovies';
+
 function App() {
   
   return (
@@ -21,7 +23,7 @@ function App() {
           <Route path="/add-movie" element={<AddMovie />} />
           <Route path='/details/:movieId' element={<MovieDetails />} />
           <Route path='/profile' element={<Profile />} />
-
+          <Route path='/all' element={<AllMovie />} />
         </Routes>
         <Footer />
 

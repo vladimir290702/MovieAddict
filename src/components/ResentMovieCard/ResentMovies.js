@@ -12,7 +12,6 @@ export default function ResentMovies() {
             })
 
     }, [])
-    
     return (
         <>
             <div className="resent_title">
@@ -23,8 +22,8 @@ export default function ResentMovies() {
                     resentMovies.length > 0
                         ? resentMovies.map(movie =>
                         (
-                            <div className="resent_movie" key={movie.movieId}>
-                                <ResentMovieCard key={movie.movieId} resentMovies={movie} />
+                            <div className="resent_movie" key={movie.id}>
+                                <ResentMovieCard key={movie.id} resentMovies={movie} />
                             </div>
                         ))
                         : <h2>No movies yet!</h2>

@@ -1,0 +1,55 @@
+.all_movies{
+    margin-top: -20px;
+    background-color: #221F1F;
+    color: white;
+ }
+ 
+ .movie_title{
+    padding-top: 30px;
+ }
+ 
+ .row{
+    margin-left: 20px;
+    margin-bottom: -50px;
+ }
+ 
+ .row > h1{
+    margin-left: 20px;
+ }
+ 
+ .row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+ }
+ 
+ .row_posters::-webkit-scrollbar{
+    display: none;
+ }
+ 
+ .row_poster{
+    object-fit: contain;
+    max-height: 220px;
+    margin-right: 13px;
+    transition: transform 450ms;
+ }
+ 
+ .row_poster:hover{
+    transform: scale(1.08);
+ }
+ 
+ .row_posterLarge{
+    max-height: 300px;
+ }
+ 
+ .row_posterLarge:hover{
+    transform: scale(1.09);
+ }
+ 
+ .delimeter{
+    width: 100%;
+    background-color: #E50914;
+    height: 4px;
+    margin: 50px 0 0 0;
+ }

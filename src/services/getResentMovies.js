@@ -1,26 +1,16 @@
-import requests from './tmdbRequests'
-const tmdbUrl = 'https://image.tmdb.org/t/p/w500'
+const baseUrl = `https://movieaddict-d6a19-default-rtdb.europe-west1.firebasedatabase.app`;
 
 const getResentMovies = async () => {
-    let response = await fetch(`${requests.fetchLatest}`);
+    let response = await fetch(`${baseUrl}/movies.json`);
     let data = await response.json();
-    let movies = []
-    
+
     if (data === null) {
         return [];
     }
 
-    data.results.forEach(movie => {
-        let movieInfo = {
-            movieImg: `${tmdbUrl}${movie.poster_path}`,
-            movieName: movie.title,
-            movieId: movie.id
-        }
-        
-       movies.push(movieInfo)
-    })
+    let resentMovies = Object.keys(data).map(id => Object.assign(data[id], { id }))
 
-    return movies.slice(-4).reverse();
+    return resentMovies.slice(-4).reverse();
 }
 
 export default getResentMovies;
