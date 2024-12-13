@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
 import AddMovie from "./components/AddMovie/AddMovie"
+import MovieDetails from "./components/MovieDetails/MovieDetails"
 
 function App() {
   
@@ -18,7 +19,8 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/add-movie" element={<AddMovie />} />
-          
+          <Route path='/details/:movieId' element={<MovieDetails />} />
+
         </Routes>
         <Footer />
 
