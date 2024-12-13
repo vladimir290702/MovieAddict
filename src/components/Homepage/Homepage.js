@@ -1,9 +1,14 @@
 import { useState, useEffect } from 'react';
+import ButtonSection from '../ButtonSection/ButtonSection';
+import ResentMovies from '../ResentMovieCard/ResentMovies';
 import requests from '../../services/tmdbRequests';
 import './Homepage.css';
+import { useAuth } from '../../contexts/authContext';
+
 
 export default function Homepage() {
     const [movie, setMovie] = useState([]);
+    const { currentUser } = useAuth();
 
     useEffect(() => {
 
@@ -11,8 +16,6 @@ export default function Homepage() {
         async function fetchData() {
             const request = await fetch(requests.fetchPopular);
             const data = await request.json();
-
-            console.log(data)
 
             let randomMovie = Math.floor(Math.random() * data.results.length);
             setMovie(data.results[randomMovie]);
@@ -41,6 +44,13 @@ export default function Homepage() {
                 </div>
             </div>
             <div className="fade_banner"></div>
+
+            {
+                currentUser
+                    ? <ButtonSection />
+                    : <div></div>
+            }
+            <ResentMovies />
         </>
     )
 }

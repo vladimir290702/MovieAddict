@@ -1,0 +1,143 @@
+.resent_movies {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(#575757, #ff0000);
+}
+
+.resent_title {
+    padding: 10px;
+    background: #575757;
+    text-align: center;
+    color: white;
+    margin-bottom: -22px;
+    font-size: 26px;
+}
+
+.resent_movie {
+    margin: auto;
+}
+
+.resent_movie img {
+    width: 300px;
+    height: 400px;
+}
+
+.resent_details {
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    height: 40px;
+    margin-top: -10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    border-color: black;
+    background-color: #221F1F;
+}
+
+.resent_details_btn {
+    text-decoration: none;
+    background-color: #E50914;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.resent_movies h2 {
+    margin: auto;
+    font-size: 40px;
+}
+
+@media (min-width: 320px)  {
+    .resent_title {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+
+    .resent_movie img {
+        margin: auto;
+        width: 200px;
+        height: 300px;
+    }
+
+    .resent_details {
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .resent_details_btn {
+        padding: 7px 17px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 480px) {
+    .resent_title {
+        font-size: 16px;
+    }
+
+    .resent_movie img {
+        margin: auto;
+        width: 220px;
+        height: 320px;
+    }
+
+    .resent_details {
+        width: 220px;
+        height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .resent_details_btn {
+        padding: 8px 18px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 760px) {
+    .resent_title {
+        font-size: 18px;
+    }
+
+    .resent_movie img {
+        margin: auto;
+        width: 250px;
+        height: 350px;
+    }
+
+    .resent_details {
+        width: 250px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .resent_details_btn {
+        padding: 8px 18px;
+        font-size: 22px;
+    }
+}
+
+
+@media (min-width: 980px) {
+    .resent_title {
+        font-size: 20px;
+    }
+
+    .resent_movie img {
+        margin: auto;
+        width: 300px;
+        height: 400px;
+    }
+
+    .resent_details {
+        width: 300px;
+        height: 40px;
+    }
+
+    .resent_details_btn {
+        padding: 8px 18px;
+        font-size: 23px;
+    }
+}
