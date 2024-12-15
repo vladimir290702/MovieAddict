@@ -3,7 +3,6 @@
 }
 
 #buttons a{
-    padding-left: 45px;
     margin-left: 20px;
     border-radius: 50%;
 }
@@ -17,7 +16,7 @@
 }
 
 .fa-twitter {
-    background: #55ACEE;
+    background: white;
 }
 
 .fa-instagram {
@@ -47,7 +46,16 @@
 }
 
 .social-media {
-    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.container .copy{
+    margin-bottom: 30px;
+}
+
+#copy{
+    background-color: #221F1F;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 320px) {
@@ -76,6 +84,12 @@
         width: 18px;
     }
 
+    .fa img{
+        margin-top: 10px;
+        width: 20px;
+        height: 15px
+    }
+
     .copy {
         font-size: 18px;
     }
@@ -87,6 +101,12 @@
         width: 21px;
     }
 
+    .fa img{
+        margin-top: 10px;
+        width: 25px;
+        height: 20px
+    }
+
     .copy {
         font-size: 22px;
     }
@@ -94,11 +114,17 @@
 
 @media (min-width: 980px) {
     .fa {
-        font-size: 24px;
-        width: 24px;
+        font-size: 30px;
+        width: 30px;
+    }
+
+    .fa img{
+        margin-top: 10px;
+        width: 35px;
+        height: 30px
     }
 
     .copy {
-        font-size: 24px;
+        font-size: 30px;
     }
 }
